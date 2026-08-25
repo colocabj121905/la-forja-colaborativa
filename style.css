@@ -1,0 +1,40 @@
+:root {
+  --ink: #f8f0d8;
+  --muted: #c9bc9b;
+  --night: #171826;
+  --surface: #24253a;
+  --line: #51526b;
+  --gold: #d7a947;
+  --teal: #69c3c5;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: radial-gradient(circle at 15% 0%, #374066 0, var(--night) 42rem);
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.55;
+}
+.hero, main, footer { max-width: 1100px; margin: auto; }
+.hero { padding: 5.5rem 2rem 3.5rem; text-align: center; }
+h1, h2, h3 { font-family: Cinzel, Georgia, serif; line-height: 1.2; }
+h1 { margin: .35rem 0 .8rem; color: var(--gold); font-size: clamp(2.2rem, 6vw, 4.5rem); }
+h2 { margin: 0; font-size: clamp(1.45rem, 3vw, 2.15rem); }
+.eyebrow, .tag { margin: 0; color: var(--teal); font-size: .82rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.intro { max-width: 620px; margin: auto; color: var(--muted); font-size: 1.2rem; }
+main { padding: 0 2rem 4rem; }
+.panel { padding: 1.6rem; border: 1px solid var(--line); border-radius: 16px; background: rgba(36, 37, 58, .8); }
+.participants { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.participants li { padding: .45rem .85rem; border: 1px solid var(--gold); border-radius: 999px; color: var(--ink); }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin: 3.5rem 0 1.4rem; }
+.hint { max-width: 300px; margin: 0; color: var(--muted); text-align: right; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 330px)); gap: 1.5rem; }
+.card { overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: 0 18px 42px rgba(0, 0, 0, .22); }
+.card img { display: block; width: 100%; aspect-ratio: 16 / 10; background: #202a43; object-fit: cover; }
+.card-content { padding: 1.4rem; }
+.card h3 { margin: .35rem 0 .55rem; color: var(--gold); font-size: 1.35rem; }
+.card p { margin: 0 0 1rem; }
+.author { margin-bottom: 0 !important; color: var(--teal); font-size: .92rem; font-weight: 700; }
+footer { padding: 1.8rem; border-top: 1px solid var(--line); color: var(--muted); text-align: center; }
+@media (max-width: 560px) { .hero { padding-top: 3.5rem; } main { padding-inline: 1rem; } .section-heading { display: block; } .hint { margin-top: .8rem; text-align: left; } }

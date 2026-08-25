@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Brújula del Dragón</title><desc id="desc">Brújula dorada sobre un fondo azul oscuro.</desc>
+  <defs><radialGradient id="bg"><stop stop-color="#334a74"/><stop offset="1" stop-color="#131829"/></radialGradient><radialGradient id="gem"><stop stop-color="#d6ffff"/><stop offset=".4" stop-color="#63c7e4"/><stop offset="1" stop-color="#176287"/></radialGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="400" cy="250" r="166" fill="#b17d2c" stroke="#f4d374" stroke-width="16"/>
+  <circle cx="400" cy="250" r="130" fill="#192841" stroke="#71532b" stroke-width="8"/>
+  <path d="M400 116l42 134-42 134-42-134z" fill="#e8bd56"/><path d="M400 116v134l-42 134 42-134z" fill="#f8e5a1"/>
+  <path d="M400 384l42-134-42-134-42 134z" fill="#8d3134"/><circle cx="400" cy="250" r="34" fill="url(#gem)" stroke="#f3d475" stroke-width="8"/>
+  <g fill="#f4d374" font-family="serif" font-size="29" text-anchor="middle"><text x="400" y="153">N</text><text x="400" y="368">S</text><text x="292" y="260">O</text><text x="508" y="260">E</text></g>
+</svg>
