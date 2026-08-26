@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Escudo Mágico</title>
+  <desc id="desc">Escudo mágico dorado y azul sobre un fondo oscuro, manteniendo las proporciones del diseño original.</desc>
+  <defs>
+    <radialGradient id="bg"><stop stop-color="#334a74"/><stop offset="1" stop-color="#131829"/></radialGradient>
+    <radialGradient id="gem"><stop stop-color="#d6ffff"/><stop offset=".4" stop-color="#63c7e4"/><stop offset="1" stop-color="#176287"/></radialGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#8f6224"/><stop offset=".5" stop-color="#f4d374"/><stop offset="1" stop-color="#9a6927"/></linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Aura mágica -->
+  <circle cx="400" cy="250" r="166" fill="none" stroke="#63c7e4" stroke-opacity=".18" stroke-width="18"/>
+  <circle cx="400" cy="250" r="148" fill="none" stroke="#d6ffff" stroke-opacity=".12" stroke-width="3"/>
+
+  <!-- Escudo -->
+  <path d="M400 92 L536 142 V260 C536 350 478 408 400 438 C322 408 264 350 264 260 V142 Z"
+        fill="url(#gold)" stroke="#f4d374" stroke-width="12"/>
+  <path d="M400 116 L510 156 V258 C510 330 466 378 400 407 C334 378 290 330 290 258 V156 Z"
+        fill="#192841" stroke="#71532b" stroke-width="8"/>
+
+  <!-- Divisiones del escudo -->
+  <path d="M400 116 V407" stroke="#d9a941" stroke-width="8"/>
+  <path d="M290 258 H510" stroke="#d9a941" stroke-width="8"/>
+
+  <!-- Emblema mágico central -->
+  <circle cx="400" cy="250" r="57" fill="#1d3453" stroke="#f3d475" stroke-width="8"/>
+  <path d="M400 188 L415 232 L462 232 L424 260 L438 306 L400 279 L362 306 L376 260 L338 232 L385 232 Z"
+        fill="#e8bd56"/>
+  <circle cx="400" cy="250" r="20" fill="url(#gem)" stroke="#d6ffff" stroke-width="4"/>
+
+  <!-- Runas -->
+  <g fill="#f4d374" font-family="serif" font-size="27" text-anchor="middle">
+    <text x="400" y="174">✦</text>
+    <text x="400" y="356">✦</text>
+    <text x="330" y="262">✧</text>
+    <text x="470" y="262">✧</text>
+  </g>
+</svg>
